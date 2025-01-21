@@ -27,7 +27,7 @@ jobs:
 
       # Step 5: Install Bomber
       - name: Install Bomber
-        run: dpkg -i bomber_0.5.0_linux_arm64.deb
+        run: sudo dpkg -i bomber_0.5.0_linux_arm64.deb
 
       # Step 6: Scan SBOM with Grype (HTML format for quick viewing, no artifact saved)
       - name: Bomber Scan - HTML Format
